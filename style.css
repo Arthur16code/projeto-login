@@ -1,0 +1,11 @@
+:root{
+    --fonte:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, rgb(132, 0, 255), rgb(95, 165, 225));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: var(--fonte);
+}
