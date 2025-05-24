@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Login</title>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="medias-queries.css">
 </head>
 <body>
     <main>
         <section id="login">
-            <div id="img">
-                
+            <div id="imagem">
+                <!-- Aqui vai a imagem nas CSS -->
             </div>
-            <div id="form">
-                <h1>login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login</p>
-                <form action="login.php" method="post">
-                        <div id="campo">
-                            <input type="email" name="email" id="iemail">
-                            <label for="iemail">login</label>
-                        </div>
-
-                        <div id="campo">
-                            <input type="password" name="pass" id="ipass">
-                            <label for="ipass">senha</label>
-                            
-                        </div>
-                    <input type="submit">
-                    
+            <div id="formulario">
+                <h1>Login</h1>
+                
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="25">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="15" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <i class="material-icons">mail</i>
+                    </a>
                 </form>
             </div>
         </section>
